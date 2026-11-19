@@ -222,7 +222,6 @@ p {
 .email__button {
     background-color: #6415ff;
     height: calc(100% - 16px);
-    z-index: 2;
     border-radius: 500px;
     border: none;
     color: #ffff;
