@@ -59,7 +59,7 @@ nav {
 
 .nav__logo--img {
   display: flex;
-  align-items: center;
+  justify-content: flex-start;
   margin: 8px 0;
   padding-bottom: 4px;
   height: 50px;
@@ -68,6 +68,7 @@ nav {
 
 .nav__links {
   display: flex;
+  align-content: flex-start;
   letter-spacing: 1px;
 }
 
@@ -81,12 +82,20 @@ nav {
   display: flex;
   align-items: center;
   gap: 10px;
+  justify-content: flex-start;
+}
+
+
+.login {
+    margin-left: 45px;
 }
 
 .menu__links {
   overflow: hidden;
-  display: none;
   list-style-type: none;
+  text-decoration: underline;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .menu__link {
@@ -185,53 +194,49 @@ h1 {
 }
 
 .purple {
-    color: #6415ff;
+  color: #6415ff;
 }
 
 p {
-  
 }
 
 .header__description--para {
- max-width: 800px;
- margin: 20px 0;
- font-size: 20px;
- line-height: 1.5;
- text-align: center;
+  max-width: 800px;
+  margin: 20px 0;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #243e63;
 }
 
 .email {
-    display: flex;
-    align-items: center;
-    gap: 10px; 
-    padding: 0 20px;
-    justify-content: center;
-    border-radius: 500px;
-    border: 2px solid rgb(229, 231, 235);
-    position: absolute;
-    padding: 20px 20px 20px 20px;
-    font-size: 16px;
-    font-weight: 500;
-    justify-content: center;
-    width: 60%;
-    
-    
-
+  border: rgb(229, 231, 235);
+  border-radius: 500px;
+  align-items: center;
+  font-size:;
 }
 
 .email__button {
-    background-color: #6415ff;
-    height: calc(100% - 16px);
-    border-radius: 500px;
-    border: none;
-    color: #ffff;
-    font-weight: 700px;
-    font-size: 15px;
-    transition: all 300ms ease;
-    margin: 16px 0 0 0;
-    padding: 16px 0 16px 0;
-
+  background-color: #6415ff;
+  height: calc(100% - 16px);
+  border-radius: 500px;
+  border: none;
+  color: #ffff;
+  font-weight: 700px;
+  font-size: 20px;
+  transition: all 300ms ease;
+  margin: 20px;
+  padding: 25px;
 }
+
+.email__input {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  font-size: 19px;
+}
+
 /* 
 
 FEATURES ↓
