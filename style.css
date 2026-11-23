@@ -55,6 +55,8 @@ nav {
 .nav__row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  max-width: none;
 }
 
 .nav__logo--img {
@@ -85,17 +87,14 @@ nav {
   justify-content: flex-start;
 }
 
-
 .login {
-    margin-left: 45px;
+  margin-left: 45px;
 }
 
 .menu__links {
-  overflow: hidden;
-  list-style-type: none;
-  text-decoration: underline;
-  display: flex;
-  justify-content: flex-start;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .menu__link {
@@ -346,6 +345,18 @@ MOBILE RESPONSIVENESS ↓
   header .row {
     align-items: flex-end;
   }
+  .menu__links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+}
+
+.menu__links li {
+  list-style: none;
+}
 }
 
 @media (max-width: 1024px) {
@@ -359,6 +370,21 @@ MOBILE RESPONSIVENESS ↓
   footer {
     padding: 80px 32px;
   }
+  .menu__links {
+    display: none;
+  }
+  .menu__links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+}
+
+.menu__links li {
+  list-style: none;
+}
 }
 
 @media (max-width: 768px) {
@@ -374,6 +400,18 @@ MOBILE RESPONSIVENESS ↓
   #pricing .row {
     margin-top: 40px;
   }
+  .menu__links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+}
+
+.menu__links li {
+  list-style: none;
+}
 }
 
 @media (max-width: 640px) {
@@ -387,4 +425,16 @@ MOBILE RESPONSIVENESS ↓
   main {
     margin-bottom: 80px;
   }
+  .menu__links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+}
+
+.menu__links li {
+  list-style: none;
+}
 }
